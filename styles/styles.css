@@ -79,6 +79,10 @@ main {
 
   padding: 0.857em;
   border-radius: 0.571em;
+
+  &:hover {
+    background-color: var(--green);
+  }
 }
 
 @media (min-width: 1440px) {
