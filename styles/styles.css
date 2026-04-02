@@ -1,0 +1,89 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body {
+  background-color: black;
+  padding: 1.714em;
+}
+
+main {
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--grey-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1.714em;
+  border-radius: 0.857em;
+}
+
+.card__img {
+  max-width: 88px;
+  max-height: 88px;
+
+  border-radius: 50%;
+
+  margin-block-end: 1.714em;
+}
+
+.card__name {
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  color: var(--white);
+
+  margin-block-end: 0em;
+}
+
+.card__location {
+  font-weight: 700;
+
+  color: var(--green);
+
+  margin-block-end: 1.714em;
+}
+
+.card__quote {
+  color: var(--white);
+  margin-block-end: 1.714em;
+}
+
+.card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.card__links-social {
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--grey-700);
+
+  padding: 0.857em;
+  border-radius: 0.571em;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    max-inline-size: 384px;
+    padding: 2.857em;
+  }
+}
